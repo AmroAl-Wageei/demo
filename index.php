@@ -2,21 +2,44 @@
 
 require './function/function.php';
 
+require './routes/route.php';
 
+require './database/database.php';
 
+// class Person {
+//     public $name;
+//     public $age;
 
-$uri = $_SERVER['REQUEST_URI'];
+//     public function breathe() {
+//         echo $this->name . " is breathing";
+//     }
+// }
 
+// $person = new Person();
+// $person->name = "Amro Salah";
+// $person->age = 26;
 
-if ($uri === '/demo/') {
-    require './controllers/index.php';
-} elseif ($uri === '/demo/controllers/about.php') {
-    require './controllers/about.php';
-}
+// print_r($person);
+// dd($person->name);
+// dd($person->age);
+// dd($person->breathe());
 
+$config = require('./database/config.php');
 
+    $db = new Database($config['database']);
+    $posts = $db->query("select * from posts where id = 1")->fetch();
 
-// dd($_SERVER);
+    // if ($result) {
+    //     $posts = $result->fetchAll(PDO::FETCH_ASSOC);
 
-// /demo/
+    //     foreach ($posts as $post) {
+    //         echo "Post ID: " . $post['id'] . ", Title: " . $post['title'] . "<br>";
+    //     }
+    // } else {
+    //     echo "Error executing query.";
+    // }
+
+   $id = $_GET['id'];
+   $query = $db->query($query)->fetch();
+    // print_r($posts)
 ?>

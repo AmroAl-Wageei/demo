@@ -13,13 +13,13 @@
                                     class="<?= urlIs('/demo/index') ? 'bg-gray-900 text-white p-2 rounded-md' : 'hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-gray-200'; ?>"
                                     aria-current="page">Home</a>
                                 <a href="about"
-                                    class="<?= urlIs('') ? 'bg-gray-900 text-white p-2 rounded-md' : 'hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-gray-200'; ?>">About</a>
-                                <a href="contact.php"
-                                    class="<?= $_SERVER['REQUEST_URI'] === '/demo/contact.php' ? 'bg-gray-900 text-white p-2 rounded-md' : 'hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-gray-200';?>">Contact</a>
-                                <a href="notes.php"
-                                    class="<?= $_SERVER['REQUEST_URI'] === '/demo/notes.php' ? 'bg-gray-900 text-white p-2 rounded-md' : 'hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-gray-200';?>">Notes</a>
-                                <a href="testing.php"
-                                    class="<?= $_SERVER['REQUEST_URI'] === '/demo/testing.php' ? 'bg-gray-900 text-white p-2 rounded-md' : 'hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-gray-200'; ?>">Testing</a>
+                                    class="<?= urlIs('/demo/about') ? 'bg-gray-900 text-white p-2 rounded-md' : 'hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-gray-200'; ?>">About</a>
+                                <a href="contact"
+                                    class="<?= urlIs('/demo/contact') ? 'bg-gray-900 text-white p-2 rounded-md' : 'hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-gray-200';?>">Contact</a>
+                                <a href="notes"
+                                    class="<?= urlIs('/demo/notes') ? 'bg-gray-900 text-white p-2 rounded-md' : 'hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-gray-200';?>">Notes</a>
+                                <a href="testing"
+                                    class="<?= urlIs('/demo/testing') ? 'bg-gray-900 text-white p-2 rounded-md' : 'hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium text-gray-200'; ?>">Testing</a>
                             </div>
                         </div>
                     </div>
