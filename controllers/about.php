@@ -2,7 +2,7 @@
 
 // require "./routes/route.php";
 
-echo $_SERVER['REQUEST_URI'];
+// echo $_SERVER['REQUEST_URI'];
 
 // echo "This is the about page.";
 

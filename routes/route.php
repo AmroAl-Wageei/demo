@@ -28,6 +28,7 @@ $routes = [
     '/demo/contact' => './controllers/contact.php',
     '/demo/testing' => './controllers/testing.php',
     '/demo/notes' => './controllers/notes.php',
+    '/demo/note' => './controllers/note.php',
 
 ];
 

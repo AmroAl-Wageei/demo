@@ -14,7 +14,6 @@ class Database {
         $this->connection = new PDO($dsn, $username, $password , [
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
         ]);
-
     }
     public function query($query) {
 
@@ -24,6 +23,8 @@ class Database {
         return  $Statement;
     }
 }
+
+
 
 
 ?>

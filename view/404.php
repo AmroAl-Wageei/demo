@@ -11,8 +11,8 @@
 
         <h1 class="text-2xl font-bold"> Sorry this is Error Page</h1>
 
-        <p class="mt-4">
-            <a href="/demo/"> Go back home</a>
+        <p class="mt-6">
+            <a href="/demo/" class="text-blue-500 underline"> Go back home</a>
         </p>
     </div>
 </main>

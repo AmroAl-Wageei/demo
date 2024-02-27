@@ -1,10 +1,8 @@
 <?php
 
 require './function/function.php';
-
-require './routes/route.php';
-
 require './database/database.php';
+require './routes/route.php';
 
 // class Person {
 //     public $name;
@@ -24,10 +22,7 @@ require './database/database.php';
 // dd($person->age);
 // dd($person->breathe());
 
-$config = require('./database/config.php');
-
-    $db = new Database($config['database']);
-    $posts = $db->query("select * from posts where id = 1")->fetch();
+    // $posts = $db->query("select * from posts where id = 1")->fetch();
 
     // if ($result) {
     //     $posts = $result->fetchAll(PDO::FETCH_ASSOC);
@@ -39,7 +34,7 @@ $config = require('./database/config.php');
     //     echo "Error executing query.";
     // }
 
-   $id = $_GET['id'];
-   $query = $db->query($query)->fetch();
+//    $id = $_GET['id'];
+//    $query = $db->query($query)->fetch();
     // print_r($posts)
 ?>
