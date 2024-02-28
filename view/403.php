@@ -12,7 +12,7 @@
         <h1 class="text-2xl font-bold"> Unauthorized </h1>
 
         <p class="mt-6">
-            <a href="/demo/" class="text-blue-500 underline"> Go back home</a>
+            <a href="/demo/notes" class="text-blue-500 underline"> Go back All Notes</a>
         </p>
     </div>
 </main>
