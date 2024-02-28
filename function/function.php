@@ -16,5 +16,11 @@ function urlIs($value) {
     // die($_SERVER['REQUEST_URI']);
 }
 
+function authorize($condition , $status = Response::FORBIDDEN ) {
+    if (! $condition){
+        abort($status);
+    }
+}
+
 
 ?>

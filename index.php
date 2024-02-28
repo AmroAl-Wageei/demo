@@ -3,6 +3,7 @@
 require './function/function.php';
 require './database/database.php';
 require './routes/route.php';
+require './statusCode/response.php';
 
 // class Person {
 //     public $name;

@@ -5,6 +5,7 @@ $Heading = 'Notes Page';
 class Databasee {
 
     public $connection;
+    public $Statement;
 
     public function __construct($config ,$username = 'root' , $password = '' )
         {
@@ -20,17 +21,22 @@ class Databasee {
     }
     public function query($query) {
 
-        $Statement = $this->connection->prepare($query);
-        $Statement->execute();
+        $this->Statement = $this->connection->prepare($query);
+        $this->Statement->execute();
 
-        return  $Statement;
+        return  $this;
+    }
+
+        public function Leen() {
+        return $this->Statement->fetchAll();
     }
 }
 
 $config = require('./database/config.php');
 $db = new Databasee($config['database']);
 
-$notes = $db->query(' select * from notes')->fetchAll();
+$notes = $db->query(' select * from notes')->Leen();
+// $notes = $db->query(' select * from notes')->fetchAll();
 
 // dd($notes);
 
